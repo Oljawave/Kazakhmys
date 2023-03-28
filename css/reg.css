@@ -382,3 +382,39 @@ input#myDate {
         display: none;
     }
 }
+
+
+@media only screen and (max-width: 950px) {
+    .sidebar li .tooltip {
+        display: none;
+    }
+
+    .wrapper {
+        margin-top: -200px;
+        transform: scale(0.6);
+    }
+
+    .form-form {
+        transform: scale(0.6);
+    }
+
+    .home-section {
+        height: 900px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .wrapper {
+        margin-top: -300px;
+        transform: scale(0.45);
+    }
+
+    .form-form {
+        transform: scale(0.5);
+    }
+
+    .home-section {
+        height: 900px;
+    }
+}
