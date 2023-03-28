@@ -346,6 +346,7 @@ input#myDate {
     color: #6672ca;
 }
 
+
 .sidebar li .tooltip {
     position: absolute;
     top: -20px;
@@ -374,13 +375,6 @@ input#myDate {
 
 .sidebar.open li .tooltip {
     display: none;
-}
-
-
-@media (max-width: 420px) {
-    .sidebar li .tooltip {
-        display: none;
-    }
 }
 
 

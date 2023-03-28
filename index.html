@@ -1,277 +1,173 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="device-width=1170px">
-    <title>Персональные данные</title>
+    <title>KAZAKHMYS</title>
     <meta name="keywords" lang="ru" content="">
     <meta name="description" content="">
     <meta name="author" lang="ru" content="Gabdullin">
     <meta name="robots" content="all">
-    <link rel="icon" type="image/png" href="img/mys.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/all.min.css">
-    <script src="https://kit.fontawesome.com/079e71196f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://kit.fontawesome.com/079e71196f.css" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/profile.css">
-
+    <link rel="icon" type="image/png" href="img/Icons/mys.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700,800,900&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="with.js">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
+        integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://kit.fontawesome.com/c98d165499.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <div class="sidebar">
-        <div class="logo-details">
-            <div class="logo_name">KAZAKHMYS</div>
-            <i class='bx bx-menu' id="btn"></i>
-        </div>
 
-        <ul class="nav-list">
-            <li>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
                 <a href="index.html">
-                    <i class="fa-regular fa-file"></i>
-                    <span class="links_name">Персональные данные</span>
+                    <img class="logo__img" src="img/logo.png" alt="" width="300" height="72">
                 </a>
-                <span class="tooltip">Персональные данные</span>
-            </li>
-            <li>
-                <a href="food.html">
-                    <i class="fa-solid fa-utensils"></i>
-                    <span class="links_name">Питание</span>
-                </a>
-                <span class="tooltip">Питание</span>
-            </li>
-            <li>
-                <a href="ppe.html">
-                    <i class="fa-solid fa-helmet-safety"></i>
-                    <span class="links_name">СИЗ и СО</span>
-                </a>
-                <span class="tooltip">СИЗ и СО</span>
-            </li>
-            <li>
-                <a href="medical.html">
-                    <i class="fa-solid fa-star-of-life"></i>
-                    <span class="links_name">Медицинская карта</span>
-                </a>
-                <span class="tooltip">Медицинская карта</span>
-            </li>
-            <li>
-                <a href="admin.html">
-                    <i class="fa-solid fa-link"></i>
-                    <span class="links_name">Администрирование</span>
-                </a>
-                <span class="tooltip">Администрирование</span>
-            </li>
-            <li>
-                <a href="predlozheniya.html">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <span class="links_name">Вопросы и Предложения</span>
-                </a>
-                <span class="tooltip">Вопросы и Предложения</span>
-            </li>
-            <li>
-                <a href="zapis.html">
-                    <i class="fa-solid fa-check"></i>
-                    <span class="links_name">Запись к руководителю</span>
-                </a>
-                <span class="tooltip">Запись к руководителю</span>
-            </li>
-            <li>
-                <a href="search.html">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span class="links_name">Поиск по сотрудникам</span>
-                </a>
-                <span class="tooltip">Поиск по сотрудникам</span>
-            </li>
-            <li>
-                <a href="dashboard.html">
-                    <i class="fa-solid fa-table-columns"></i>
-                    <span class="links_name">Дэшборд</span>
-                </a>
-                <span class="tooltip">Дэшборд</span>
-            </li>
-            <li>
-                <a href="phoneBook.html">
-                    <i class="fa-regular fa-address-book"></i>
-                    <span class="links_name">Телефонная книга</span>
-                </a>
-                <span class="tooltip">Телефонная книга</span>
-            </li>
-            <li>
-                <a href="anket.html">
-                    <i class="fa-regular fa-file-lines"></i>
-                    <span class="links_name">Анкетирование</span>
-                </a>
-                <span class="tooltip">Анкетирование</span>
-            </li>
-        </ul>
-    </div>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="#aboutus">О платформе</a></li>
+                    <li class="nav-link"><a href="#process">Возможности</a></li>
+                    <a href="signup.html"><button type="button" class="btn btn-warning">Войти</button></a>
+                </ul>
 
 
-    <section class="home-section">
-        <div class="main-content">
-            <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
-                <div class="container-fluid">
-
-                    <a href="index.html">
-                        <img class="logo__img" src="img/kazakhmys-logo.png" alt="" width="150" height="55">
-                    </a>
-
-
-                    <ul class="navbar-nav align-items-center d-none d-md-flex">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <div class="media align-items-center">
-                                    <span class="avatar avatar-sm rounded-circle">
-                                        <img alt="Image placeholder" src="img/profile_example.jpg">
-                                    </span>
-                                    <div class="media-body ml-2 d-none d-lg-block">
-                                        <span class="mb-0 text-sm  font-weight-bold">Robert Downey JR.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="container container-menu">
+                    <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+                        <div class="container container-menu">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fa fa-bars menuo"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="ftco-nav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item"><a href="index.html" class="nav-link">О платформе</a></li>
+                                    <li class="nav-item"><a href="#aboutus" class="nav-link">About us</a></li>
+                                    <li class="nav-item"><a href="#work" class="nav-link">How it works?</a></li>
+                                    <button type="button" class="btn btn-warning">Sign up</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
+
             </nav>
 
-            <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
-                style="min-height: 600px; background-image: url(img/profile_bg.jpg); background-size: cover; background-position: center top;">
-                <span class="mask bg-gradient-default opacity-8"></span>
-                <div class="container-fluid d-flex align-items-center">
-                    <div class="row">
-                        <div class="col-lg-7 col-md-10">
-                            <h1 class="display-2 text-white">Добро пожаловать</h1>
-                            <p class="text-white mt-0 mb-5">Это страница вашего профиля. Вы можете видеть свой прогресс
-                                в работе и управлять своими проектами или назначенными задачами.</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+
+
+    </header>
+
+    <div class="content">
+        <div class="row">
+            <div class="soz">
+                <h1 class="title">Управляйте своими проектами и поставленными задачами</h1>
+                <p class="subtitle">пройдите в свой пофиль на платформе kazakhmys
+                </p>
+
+                <a href="signup.html">
+                    <button class="button-50" role="button" id="stay">ВОЙТИ</button>
+
+                </a>
+
             </div>
 
 
-            <div class="container-fluid mt--7">
-                <div class="row">
-                    <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
-                        <div class="card card-profile shadow">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-3 order-lg-2">
-                                    <div class="card-profile-image">
-                                        <a href="#">
-                                            <img src="img/profile_example.jpg" class="rounded-circle">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="btn btn-sm btn-default float-right">Выйти</a>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pt-md-4">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+        </div>
+    </div>
 
-                                        </div>
-                                    </div>
+
+    <section id="aboutus" class="section__about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">О платформе</h2>
+                <div class="section__text">
+                    <h3>Платформа управления личным кабинетом для корпораций - это инновационный инструмент, который
+                        позволяет
+                        эффективно управлять личным кабинетом сотрудников компании.Платформа обеспечивает удобный
+                        интерфейс для
+                        работы с личным кабинетом и позволяет быстро настраивать параметры доступа к конфиденциальным
+                        данным.
+                        Благодаря этому решению, корпорации могут повысить производительность и безопасность своих
+                        бизнес-процессов,
+                        а также снизить затраты на управление личными кабинетами сотрудников.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="process" class="access-info access-sm pt-120 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section__title access-title">
+                        <h2 class="biggest">Получите доступ ко всей необходимой информации</h2>
+
+                        <div class="access-btn">
+                            <button class="button-34" role="button">ПОЛУЧИТЬ ДОСТУП</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="access__info-wrap mb-55">
+                                <div class="info-icon mb-35">
+                                    <img src="img/Icons/icon3.png" alt="">
                                 </div>
-                                <div class="text-center">
-                                    <h3>
-                                        Robert Downey Jr.
-                                    </h3>
-                                    <div class="h5 font-weight-300">
-                                        <i class="ni location_pin mr-2"></i>Караганда, Казахстан
-                                    </div>
-                                    <div class="h5 mt-4">
-                                        <i class="ni business_briefcase-24 mr-2"></i>Ведущий инженер-программист
-                                    </div>
-                                    <div class="h5 mt-4">
-                                        <i class="ni business_briefcase-24 mr-2"></i>777 - 777
-                                    </div>
-                                    <div class="h5 mt-4">
-                                        <i class="ni business_briefcase-24 mr-2"></i>rdj@gmail.com
-                                    </div>
-                                    <div>
-                                        <i class="ni education_hat mr-2"></i>
-                                    </div>
-                                    <hr class="my-4">
-                                    <p>Отдел сопровождения первоналом, отдел сопровождения первоналом, отдел
-                                        сопровождения первоналом, отдел сопровождения первоналом.</p>
+                                <div class="content1">
+                                    <h5>Медицинские данные</h5>
+                                    <p>на этой платформе вы слегкостью можете следить за своим состоянием</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-8 order-xl-1">
-                        <div class="card bg-secondary shadow">
-                            <div class="card-header bg-white border-0">
-                                <div class="row align-items-center">
-                                    <div class="col-8">
-                                        <h3 class="mb-0">Мой аккаунт</h3>
-                                    </div>
-                                    <div class="col-4 text-right">
-
-                                    </div>
+                        <div class="col-sm-6">
+                            <div class="access__info-wrap mb-55">
+                                <div class="info-icon mb-35">
+                                    <img src="img/Icons/icon4.png" alt="">
+                                </div>
+                                <div class="content1">
+                                    <h5 id="idid">СИЗ и СО</h5>
+                                    <p>информация о средствах индивидуальной защиты также доступна для вас</p>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <form>
-                                    <h6 class="heading-small text-muted mb-4">Информация</h6>
-                                    <div class="pl-lg-4">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-group focused">
-                                                    <label class="form-control-label" for="input-firstname">Имя</label>
-                                                    <input type="text" id="input-username"
-                                                        class="form-control form-control-alternative"
-                                                        placeholder="Роберт">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label class="form-control-label" for="input-secondname">Фамилия
-                                                    </label>
-                                                    <input type="email" id="input-email"
-                                                        class="form-control form-control-alternative"
-                                                        placeholder="Дауни">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-group focused">
-                                                    <label class="form-control-label" for="input-email">Email</label>
-                                                    <input type="text" id="input-first-name"
-                                                        class="form-control form-control-alternative"
-                                                        placeholder="rdj@gmail.com">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group focused">
-                                                    <label class="form-control-label" for="input-phone-number">Табельный
-                                                        номер</label>
-                                                    <input type="text" id="input-last-name"
-                                                        class="form-control form-control-alternative"
-                                                        placeholder="777-777">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group focused">
-                                                    <label class="form-control-label"
-                                                        for="input-last-name">Город</label>
-                                                    <input type="text" id="input-last-name"
-                                                        class="form-control form-control-alternative"
-                                                        placeholder="Караганда">
-                                                </div>
-                                                <a href="#!" class="btn btn-info">Изменить Данные</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr class="my-4">
-                                </form>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="access__info-wrap mb-55">
+                                <div class="info-icon mb-35">
+                                    <img src="img/Icons/icon2.png" alt="">
+                                </div>
+                                <div class="content1">
+                                    <h5>Питание</h5>
+                                    <p>нормы приема пищи и их количесво вы можете узнать именно здесь</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="access__info-wrap mb-55">
+                                <div class="info-icon mb-35">
+                                    <img src="img/Icons/icon1.png" alt="">
+                                </div>
+                                <div class="content1">
+                                    <h5>Вопросы и предлодения</h5>
+                                    <p>при возникновений вопросов или предложений вы можете их оставить заполнив форму
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -281,33 +177,73 @@
     </section>
 
 
+    <footer class=" text-white text-center text-lg-start" style="background-color: #4843ff;">
+        <div class="container p-4" style="background-color: #4843ff;">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" id="left-box">
+
+                    <img class="logo_img" src="img/logo.png" alt="" width="120" height="29">
+
+                    <p>
+                        Если у вас есть какие либо вопросы или предлодения можете всязаться с нами по e-mail
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="central-box">
+                    <h5 class="text-uppercase footertext">Быстрые ссылки</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="universities.html" class="text-white">О платформе</a>
+                        </li>
+                        <li>
+                            <a href="about/about.html" class="text-white">Возможности</a>
+                        </li>
+                        <li>
+                            <a href="news.html" class="text-white">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="right-box">
+                    <h5 class="text-uppercase mb-0 footertext">Контакты</h5>
+                    <p>
+                        <i class="city"><i class="fas fa-home"></i></i> Караганда
+                    </p>
+                    <p>
+                        <i class="email"><i class="fas fa-envelope-open-text"></i></i> kazakhmys@gmail.com
+                    </p>
+                    <p>
+                        <a class="phone" href="tel:+77085176491"><i class="fas fa-phone"></i> +7 (708)517-64-91</a>
+
+                </div>
+
+            </div>
+
+        </div>
 
 
 
-    <script>
-        let sidebar = document.querySelector(".sidebar");
-        let closeBtn = document.querySelector("#btn");
-        let searchBtn = document.querySelector(".bx-search");
 
-        closeBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("open");
-            menuBtnChange();//calling the function(optional)
-        });
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2023 : kazakhmys</div>
 
-        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
-            sidebar.classList.toggle("open");
-            menuBtnChange(); //calling the function(optional)
-        });
+    </footer>
 
-        // following are the code to change sidebar button(optional)
-        function menuBtnChange() {
-            if (sidebar.classList.contains("open")) {
-                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-            } else {
-                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
-            }
-        }
-    </script>
+
+
+    </div>
+
+
+
+    <script src="with.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>

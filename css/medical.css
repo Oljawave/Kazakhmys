@@ -2203,3 +2203,19 @@ td.text-right {
     background-color: #39bda7;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
+
+
+@media only screen and (max-width: 768px) {
+
+    .button-3 {
+        transform: scale(0.5);
+    }
+
+    #card-info {
+        transform: scale(0.5);
+    }
+
+    .text-center {
+        margin-left: 0px;
+    }
+}
