@@ -1,0 +1,246 @@
+.home-section {
+    padding-bottom: 2000px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.mt-4 {
+    font-size: 20px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 1200px;
+    height: 450px;
+    background: white;
+    box-shadow: 1px 1px 25px 3px rgb(0 0 0 / 30%);
+    margin-left: 100px;
+    margin-top: 200px;
+    border-radius: 20px;
+
+}
+
+
+/*************/
+.header {
+    position: absolute;
+    width: max-content;
+    font-size: 32px;
+    margin-top: -50px;
+    white-space: nowrap;
+    top: 25%;
+    left: 600px;
+    color: #252946;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background: #252946;
+}
+
+
+/*************/
+.content {
+    position: absolute;
+    font-size: 22px;
+    width: 40%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    top: 45%;
+    left: 600px;
+    margin-top: -70px;
+    color: #252946;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: 900px;
+    /* width: 50%; */
+    height: 100%;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    margin-top: 50px;
+}
+
+#search_text {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#navbar-main {
+    background-color: #252946;
+}
+
+.card {
+    box-shadow: #252946;
+
+}
+
+.buttons-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 550px;
+    margin-bottom: -20px;
+}
+
+.button-3 {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #252946;
+    background-color: #252946;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: rgb(255, 253, 253);
+    z-index: 1;
+    margin-right: 30px;
+}
+
+.button-3:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button-3:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #6672ca;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button-3:hover {
+    color: #ffffff;
+    border: 1px solid #6672ca;
+}
+
+.button-3:hover:before {
+    top: -35%;
+    background-color: #6672ca;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button-3:hover:after {
+    top: -45%;
+    background-color: #6672ca;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.responsive-table {
+    margin-right: 50px;
+}
+
+.responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.table-header {
+    background-color: #252946;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.row_button {
+    text-decoration: none;
+    color: #252946;
+}
+
+.table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.col-1 {
+    flex-basis: 50%;
+}
+
+.col-2 {
+    flex-basis: 10%;
+}
+
+.col-3 {
+    flex-basis: 20%;
+}
+
+.col-4 {
+    flex-basis: 10%;
+}
+
+.col-5 {
+    flex-basis: 10%;
+}
+
+#header-col2 {
+    margin-left: 20px;
+}
+
+
+.table-row:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+.row_button:hover {
+    color: #252946;
+}
+
+
+@media all and (max-width: 767px) {
+    .table-header {
+        display: none;
+    }
+
+
+    li {
+        display: block;
+    }
+
+    .col {
+
+        flex-basis: 100%;
+
+    }
+
+    .col {
+        display: flex;
+        padding: 10px 0;
+    }
+}

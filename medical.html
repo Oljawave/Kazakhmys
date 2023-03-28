@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width=1170px">
+    <title>Медицинская карта</title>
+    <meta name="keywords" lang="ru" content="">
+    <meta name="description" content="">
+    <meta name="author" lang="ru" content="Gabdullin">
+    <meta name="robots" content="all">
+    <link rel="icon" type="image/png" href="img/mys.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/079e71196f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/079e71196f.css" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/medical.css">
+
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">KAZAKHMYS</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">
+                    <i class="fa-regular fa-file"></i>
+                    <span class="links_name">Персональные данные</span>
+                </a>
+                <span class="tooltip">Персональные данные</span>
+            </li>
+            <li>
+                <a href="food.html">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span class="links_name">Питание</span>
+                </a>
+                <span class="tooltip">Питание</span>
+            </li>
+            <li>
+                <a href="ppe.html">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <span class="links_name">СИЗ и СО</span>
+                </a>
+                <span class="tooltip">СИЗ и СО</span>
+            </li>
+            <li>
+                <a href="medical.html">
+                    <i class="fa-solid fa-star-of-life"></i>
+                    <span class="links_name">Медицинская карта</span>
+                </a>
+                <span class="tooltip">Медицинская карта</span>
+            </li>
+            <li>
+                <a href="admin.html">
+                    <i class="fa-solid fa-link"></i>
+                    <span class="links_name">Администрирование</span>
+                </a>
+                <span class="tooltip">Администрирование</span>
+            </li>
+            <li>
+                <a href="predlozheniya.html">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span class="links_name">Вопросы и Предложения</span>
+                </a>
+                <span class="tooltip">Вопросы и Предложения</span>
+            </li>
+            <li>
+                <a href="zapis.html">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="links_name">Запись к руководителю</span>
+                </a>
+                <span class="tooltip">Запись к руководителю</span>
+            </li>
+            <li>
+                <a href="search.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="links_name">Поиск по сотрудникам</span>
+                </a>
+                <span class="tooltip">Поиск по сотрудникам</span>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span class="links_name">Дэшборд</span>
+                </a>
+                <span class="tooltip">Дэшборд</span>
+            </li>
+            <li>
+                <a href="phoneBook.html">
+                    <i class="fa-regular fa-address-book"></i>
+                    <span class="links_name">Телефонная книга</span>
+                </a>
+                <span class="tooltip">Телефонная книга</span>
+            </li>
+            <li>
+                <a href="anket.html">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <span class="links_name">Анкетирование</span>
+                </a>
+                <span class="tooltip">Анкетирование</span>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section-health" id="medical_home">
+
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+
+                <a href="index.html">
+                    <img class="logo__img" src="img/kazakhmys-logo.png" alt="" width="150" height="55">
+                </a>
+
+
+                <ul class="navbar-nav align-items-center d-none d-md-flex">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="media align-items-center">
+                                <span class="avatar avatar-sm rounded-circle">
+                                    <img class="rounded-circle avatar-img" alt="Image placeholder"
+                                        src="img/profile_example.jpg" width="50px">
+                                </span>
+                                <div class="media-body ml-2 d-none d-lg-block">
+                                    <span class="mb-0 text-sm  font-weight-bold">Robert Downey JR.</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="text" id="header_text">Медицинская карта</div>
+        <div class="main-content">
+
+            <div class="top-container">
+                <div class="container-fluid mt--7">
+                    <div class="row">
+                        <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+                            <div class="card card-profile shadow">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-3 order-lg-2">
+                                        <div class="card-profile-image">
+                                            <a href="#">
+                                                <img src="img/profilePage.jpg" class="rounded-circle">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                                    <div class="d-flex justify-content-between">
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0 pt-md-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h1>Бенедикт Камбербэтч</h1>
+                                        <div class="h5 font-weight-300">
+                                            <i class="fa-solid fa-calendar-days"></i><i
+                                                class="ni location_pin mr-2"></i>
+                                            Пол: Мужской - 46 лет
+                                        </div>
+                                        <div class="h5 mt-4">
+                                            <i class="fa-solid fa-location-dot"></i><i class="ni location_pin mr-2"></i>
+                                            Лондон, Англия
+                                        </div>
+                                        <div class="h5 mt-4">
+                                            <i class="fa-solid fa-phone"></i><i
+                                                class="ni business_briefcase-24 mr-2"></i>111 - 111
+                                        </div>
+                                        <div class="h5 mt-4">
+                                            <i class="fa-solid fa-envelope"></i><i
+                                                class="ni business_briefcase-24 mr-2"></i>benedict@gmail.com
+                                        </div>
+                                        <div class="h5 mt-4">
+                                            <i class="fa-solid fa-briefcase"></i><i
+                                                class="ni business_briefcase-24 mr-2"></i>Ведущий инженер-программист
+                                        </div>
+                                    </div>
+                                    <div class="medical-text">
+                                        <div class="h2 mt-4 info_text osmotr">
+                                            </i><i class="ni location_pin mr-2"></i>
+                                            Последний осмотр: DamuMed, 30 января 2023 года
+                                        </div>
+                                        <div class="h2 mt-4 info_text">
+                                            </i><i class="ni location_pin mr-2"></i>
+                                            Наблюдение: увеличение частоты сердечных сокращений (ЧСС) от 90 ударов в
+                                            минуту.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="container-pokazateli">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-health">
+                                    <div class="card-body-health">
+                                        <div class="pokazateli">
+                                            <div class="text-pokazateli dawlenie">
+                                                <h1>180/60</h1>
+                                            </div>
+                                            <div class="pokazatel">Артериальное Давление</div>
+                                        </div>
+                                        <div class="graph">
+                                            <img src="img/positive.png" alt="" width="70px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card-health">
+                                    <div class="card-body-health">
+                                        <div class="pokazateli">
+                                            <div class="text-pokazateli dawlenie">
+                                                <h1>76.2 кг</h1>
+                                            </div>
+                                            <div class="pokazatel">Вес</div>
+                                        </div>
+                                        <div class="graph">
+                                            <img src="img/positive.png" alt="" width="70px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card-health">
+                                    <div class="card-body-health">
+                                        <div class="pokazateli">
+                                            <div class="text-pokazateli dawlenie">
+                                                <h1>180</h1>
+                                            </div>
+                                            <div class="pokazatel">Рост</div>
+                                        </div>
+                                        <div class="graph">
+                                            <img src="img/positive.png" alt="" width="70px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-health">
+                                    <div class="card-body-health">
+                                        <div class="pokazateli">
+                                            <div class="text-pokazateli dawlenie">
+                                                <h1>36.6C</h1>
+                                            </div>
+                                            <div class="pokazatel">Температура</div>
+                                        </div>
+                                        <div class="graph">
+                                            <img src="img/positive.png" alt="" width="70px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card-health">
+                                    <div class="card-body-health">
+                                        <div class="pokazateli">
+                                            <div class="text-pokazateli dawlenie">
+                                                <h1>92bpm</h1>
+                                            </div>
+                                            <div class="pokazatel">Пульс</div>
+                                        </div>
+                                        <div class="graph">
+                                            <img src="img/negative.png" alt="" width="60px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card-health">
+                                    <div class="card-body-health">
+                                        <div class="pokazateli">
+                                            <div class="text-pokazateli dawlenie">
+                                                <h1>98%</h1>
+                                            </div>
+                                            <div class="pokazatel">Сатурация крови</div>
+                                        </div>
+                                        <div class="graph">
+                                            <img src="img/positive.png" alt="" width="70px">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons-bar">
+                    <button class="button-3"> Медицинcкие осмотры
+                    </button>
+                    <button class="button-3"> Обращения
+                    </button>
+                    <button class="button-3"> Отчет по работникам
+                    </button>
+                    <button class="button-3"> Отчет по организациям
+                    </button>
+                </div>
+
+                <div class="table-title">
+                    <h3>Медицинcкие осмотры</h3>
+                </div>
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Дата</th>
+                            <th class="text-left">Тест на алкоголь</th>
+                            <th class="text-left">Значение теста</th>
+                            <th class="text-left">Артериальное давление</th>
+                            <th class="text-left">Пульс</th>
+                            <th class="text-left">Температура</th>
+                            <th class="text-left">Жалобы</th>
+                            <th class="text-left">Наблюдения</th>
+                            <th class="text-left">Допуск</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr>
+                            <td class="text-left">2023-02-12 13:01:23</td>
+                            <td class="text-left">Отрицательный</td>
+                            <td class="text-left">0</td>
+                            <td class="text-left">180/60</td>
+                            <td class="text-left">92</td>
+                            <td class="text-left">36.6</td>
+                            <td class="text-left">нет</td>
+                            <td class="text-left">Тахикардия</td>
+                            <td class="text-left">Сотрудник допущен</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">2023-02-12 13:01:23</td>
+                            <td class="text-left">Отрицательный</td>
+                            <td class="text-left">0</td>
+                            <td class="text-left">180/60</td>
+                            <td class="text-left">92</td>
+                            <td class="text-left">36.6</td>
+                            <td class="text-left">нет</td>
+                            <td class="text-left">Тахикардия</td>
+                            <td class="text-left">Сотрудник допущен</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">2023-02-12 13:01:23</td>
+                            <td class="text-left">Отрицательный</td>
+                            <td class="text-left">0</td>
+                            <td class="text-left">180/60</td>
+                            <td class="text-left">92</td>
+                            <td class="text-left">36.6</td>
+                            <td class="text-left">нет</td>
+                            <td class="text-left">Тахикардия</td>
+                            <td class="text-left">Сотрудник допущен</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">2023-02-12 13:01:23</td>
+                            <td class="text-left">Отрицательный</td>
+                            <td class="text-left">0</td>
+                            <td class="text-left">180/60</td>
+                            <td class="text-left">92</td>
+                            <td class="text-left">36.6</td>
+                            <td class="text-left">нет</td>
+                            <td class="text-left">Тахикардия</td>
+                            <td class="text-left">Сотрудник допущен</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">2023-02-12 13:01:23</td>
+                            <td class="text-left">Отрицательный</td>
+                            <td class="text-left">0</td>
+                            <td class="text-left">180/60</td>
+                            <td class="text-left">92</td>
+                            <td class="text-left">36.6</td>
+                            <td class="text-left">нет</td>
+                            <td class="text-left">Тахикардия</td>
+                            <td class="text-left">Сотрудник допущен</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+    </script>
+</body>
+
+</html>

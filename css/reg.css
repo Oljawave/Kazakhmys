@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "lato", sans-serif;
+}
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.predForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.form {
+    background-color: #252946;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    height: 300px;
+}
+
+.form_reg {
+    background-color: #252946;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    height: 650px;
+}
+
+.form_signin {
+    background-color: #252946;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    height: 450px;
+}
+
+.form_form {
+    background-color: #252946;
+    width: 900px;
+    height: 65 0px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-top: 50px;
+}
+
+.form_zapis {
+    background-color: #252946;
+    width: 900px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-top: 30px;
+}
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.under_title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.register {
+    font-family: 'Quicksand', sans-serif;
+
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.inputContainer1 {
+    margin-top: 40px;
+    position: relative;
+    height: 45px;
+    width: 60%;
+    margin-bottom: 17px;
+}
+
+.inputContainer2 {
+    margin-top: 40px;
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: white;
+    z-index: 1;
+}
+
+.date_text {
+    color: white;
+    margin-left: 20px;
+}
+
+
+.label_form {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    color: #252946;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+#label_form {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    color: #252946;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+input#myDate {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+#date-input {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: white;
+    color: #252946;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 160px;
+}
+
+.submitBtn_reg {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: white;
+    color: #252946;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+.submitBtn_signin {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: white;
+    color: #252946;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+.submitBtn_2 {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: white;
+    color: #252946;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.submitBtn:hover {
+    background-color: #6672ca;
+    transform: translateY(-2px);
+}
+
+.submitBtn_2:hover {
+    background-color: #6672ca;
+    transform: translateY(-2px);
+}
+
+.exist {
+    color: white;
+    text-decoration: none;
+}
+
+.exist:hover {
+    color: #6672ca;
+    transform: translateY(-2px);
+}
+
+.fit {
+    border-radius: 20px;
+
+}
+
+.input:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3c37d7;
+}
+
+.input:not(:placeholder-shown)+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input:focus {
+    border: 2px solid #3c37d7;
+}
+
+.main {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 40px;
+    padding-top: 50px;
+}
+
+.input_text {
+    color: white;
+    margin-bottom: -20px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat Alternates thin', sans-serif;
+}
+
+.input_text_file {
+    color: white;
+    margin-bottom: -20px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat Alternates thin', sans-serif;
+    margin-top: 120px;
+}
+
+.file-upload-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    background-color: #383F74;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    margin-top: 40px;
+}
+
+.file-upload-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+
+}
+
+.file-upload-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#third {
+    margin-top: -30px;
+}
+
+#second {
+    margin-top: -15px;
+}
+
+.file-upload-container:hover {
+    color: #6672ca;
+}

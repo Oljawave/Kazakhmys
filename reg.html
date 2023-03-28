@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width=1170px">
+    <meta name="keywords" lang="ru" content="">
+    <meta name="description" content="">
+    <meta name="author" lang="ru" content="Gabdullin">
+    <meta name="robots" content="all">
+    <title>Зарегистрироваться</title>
+    <link rel="icon" type="image/png" href="img/mys.png">
+    <link rel="stylesheet" type="text/css" href="css/reg.css">
+</head>
+
+<body>
+
+
+
+    <div class="signupFrm">
+        <div class="wrapper">
+            <form th:method="POST" th:action="@{/registration}" th:object="${user}" class="form_reg">
+                <h1 class="title">KAZAKHMYS</h1>
+                <p class="under_title">личный кабинет сотрудника ТОО «Корпорация Казахмыс»</p>
+                <p class="register">Зарегистрироваться</p>
+
+                <div class="inputContainer">
+                    <label for="name" class="label_form">Имя</label>
+                    <input type="text" th:field="*{name}" id="name" class="input" placeholder="a" />
+                    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="Surname" class="label_form">Фамилия</label>
+                    <input type="text" th:field="*{surname}" id="surname" class="input" placeholder="a" />
+                    <div style="color: red" th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}"> </div>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="phone" class="label_form">Табельный номер</label>
+                    <input type="text" th:field="*{phone}" id="phone" class="input" placeholder="a">
+                    <div style="color: red" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></div>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="password" class="label_form">Email</label>
+                    <input type="text" th:field="*{email}" id="email" class="input" placeholder="a">
+                    <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="email" class="label_form">Пароль</label>
+                    <input type="text" th:field="*{password}" id="password" class="input" placeholder="a">
+                    <div style="color: red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+                </div>
+
+                <input type="submit" class="submitBtn_reg" value="Содать акканут">
+                <a href="/login" class="exist" id="ex">Уже есть аккаунт? Войти</a>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

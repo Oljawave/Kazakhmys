@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width=1170px">
+    <meta name="keywords" lang="ru" content="">
+    <meta name="description" content="">
+    <meta name="author" lang="ru" content="Gabdullin">
+    <meta name="robots" content="all">
+    <title>Войти </title>
+    <link rel="icon" type="image/png" href="img/mys.png">
+    <link rel="stylesheet" type="text/css" href="css/reg.css">
+
+<body>
+
+
+
+    <div class="signupFrm">
+        <div class="wrapper">
+            <form th:method="POST" th:action="@{/login}" class="form_signin">
+                <h1 class="title">KAZAKHMYS</h1>
+                <p class="under_title">личный кабинет сотрудника ТОО «Корпорация Казахмыс»</p>
+                <p class="register">Войти</p>
+
+                <div class="inputContainer">
+                    <label for="name" class="label_form">Email</label>
+                    <input type="text" th:field="*{email}" id="email" class="input" placeholder="a">
+                    <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+                </div>
+                <div class="inputContainer">
+                    <label for="Surname" class="label_form">Пароль</label>
+                    <input type="text" th:field="*{password}" id="password" class="input" placeholder="a">
+                    <div style="color: red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+                </div>
+
+
+                <input type="submit" class="submitBtn_signin" value="Sign in">
+                <a href="/registration" class="exist">Нет аккаунта? Создать аккаунт</a>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

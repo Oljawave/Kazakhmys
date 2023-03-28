@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width=1170px">
+    <meta name="keywords" lang="ru" content="">
+    <meta name="description" content="">
+    <meta name="author" lang="ru" content="Gabdullin">
+    <meta name="robots" content="all">
+    <title>Телефонный спровочник</title>
+    <link rel="icon" type="image/png" href="img/mys.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/079e71196f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/079e71196f.css" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-1lih+U6+vDF34bO17UW/GhX/hZbmzKjD0kHhdzoiQOtIUNwZfOYHJn0oz0omZZkB/aFTbfkaxb4aF+38fppOAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">KAZAKHMYS</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">
+                    <i class="fa-regular fa-file"></i>
+                    <span class="links_name">Персональные данные</span>
+                </a>
+                <span class="tooltip">Персональные данные</span>
+            </li>
+            <li>
+                <a href="food.html">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span class="links_name">Питание</span>
+                </a>
+                <span class="tooltip">Питание</span>
+            </li>
+            <li>
+                <a href="ppe.html">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <span class="links_name">СИЗ и СО</span>
+                </a>
+                <span class="tooltip">СИЗ и СО</span>
+            </li>
+            <li>
+                <a href="medical.html">
+                    <i class="fa-solid fa-star-of-life"></i>
+                    <span class="links_name">Медицинская карта</span>
+                </a>
+                <span class="tooltip">Медицинская карта</span>
+            </li>
+            <li>
+                <a href="admin.html">
+                    <i class="fa-solid fa-link"></i>
+                    <span class="links_name">Администрирование</span>
+                </a>
+                <span class="tooltip">Администрирование</span>
+            </li>
+            <li>
+                <a href="predlozheniya.html">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span class="links_name">Вопросы и Предложения</span>
+                </a>
+                <span class="tooltip">Вопросы и Предложения</span>
+            </li>
+            <li>
+                <a href="zapis.html">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="links_name">Запись к руководителю</span>
+                </a>
+                <span class="tooltip">Запись к руководителю</span>
+            </li>
+            <li>
+                <a href="search.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="links_name">Поиск по сотрудникам</span>
+                </a>
+                <span class="tooltip">Поиск по сотрудникам</span>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span class="links_name">Дэшборд</span>
+                </a>
+                <span class="tooltip">Дэшборд</span>
+            </li>
+            <li>
+                <a href="phoneBook.html">
+                    <i class="fa-regular fa-address-book"></i>
+                    <span class="links_name">Телефонная книга</span>
+                </a>
+                <span class="tooltip">Телефонная книга</span>
+            </li>
+            <li>
+                <a href="anket.html">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <span class="links_name">Анкетирование</span>
+                </a>
+                <span class="tooltip">Анкетирование</span>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <section class="home-section">
+
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+
+                <a href="index.html">
+                    <img class="logo__img" src="img/kazakhmys-logo.png" alt="" width="150" height="55">
+                </a>
+
+
+                <ul class="navbar-nav align-items-center d-none d-md-flex">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="media align-items-center">
+                                <span class="avatar avatar-sm rounded-circle">
+                                    <img alt="Image placeholder" src="img/profile_example.jpg">
+                                </span>
+                                <div class="media-body ml-2 d-none d-lg-block">
+                                    <span class="mb-0 text-sm  font-weight-bold">Robert Downey JR.</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="text" id="search_text">Телефонный спровочник</div>
+
+
+
+        <div class="container">
+
+
+            <div class="header">
+
+                <button id="button_add" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa-solid fa-plus"></i>
+                    Добавить номер
+                </button>
+
+                <form class="form">
+                    <button>
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                                stroke="currentColor" stroke-width="1.333" stroke-linecap="round"
+                                stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </button>
+                    <input class="input" placeholder="Введите Табельный номер либо ФИО" required="" type="text">
+                    <button class="reset" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+
+            <ul class="responsive-table">
+                <a href="profile.html" class="row_button">
+                    <li class="table-header">
+                        <div class="col col-1" id="header-col1">ФИО</div>
+                        <div class="col col-4" id="header-col4">Табельный номер</div>
+                        <div class="col col-5" id="header-col5">E-mail</div>
+                    </li>
+                </a>
+                <a href="profile.html" class="row_button">
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Name and Surname">Габдуллин Олжас</div>
+                        <div class="col col-4" data-label="Phone Number">123-345</div>
+                        <div class="col col-5" data-label="Email">example@gmail.com</div>
+                    </li>
+                </a>
+                <a href="profile.html" class="row_button">
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Name and Surname">Комекбаев Зейн</div>
+                        <div class="col col-4" data-label="Phone Number">456-678</div>
+                        <div class="col col-5" data-label="Email">example@gmail.com</div>
+                    </li>
+                </a>
+                <a href="profile.html" class="row_button">
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Name and Surname">Батыр Алдияр</div>
+                        <div class="col col-4" data-label="Phone Number">890-123</div>
+                        <div class="col col-5" data-label="Email">example@gmail.com</div>
+                    </li>
+                </a>
+                <a href="profile.html" class="row_button">
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Name and Surname">Ескермесов Бекболат</div>
+                        <div class="col col-4" data-label="Phone Number">456-312</div>
+                        <div class="col col-5" data-label="Email">example@gmail.com</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Добавить номер </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">ФИО</label>
+                        <input type="name" class="form-control" id="recipient-name" placeholder="Диденко Виктор">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Номер</label>
+                        <input type="number" class="form-control" id="recipient-name" placeholder="123-345">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">E-mail</label>
+                        <input type="email" class="form-control" id="recipient-name" placeholder="example@gamail.com">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary btn-modal">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+    </script>
+</body>
+
+</html>
