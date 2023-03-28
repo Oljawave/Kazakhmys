@@ -102,6 +102,7 @@
     white-space: nowrap;
     pointer-events: none;
     transition: 0s;
+    color: #252946;
 }
 
 .sidebar li:hover .tooltip {
